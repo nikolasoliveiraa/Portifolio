@@ -13,17 +13,35 @@
 </head>
 
 <body>
-    <nav>
-        <div class="Logo">
-            <a href="">
-                <img class="Logo" src="">
-            </a>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1><a class="nav-link" href="#Inicio">NK</a></h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#Inicio" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                    <li class="nav-item"><a href="#fale-comigo" class="nav-link">contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#Inicio" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li class="nav-item"><a href="#fale-comigo" class="nav-link">Contato</a></li>
+            </ul>
         </div>
-        <a href="#Inicio" class="active">Inicio</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#fale-comigo">Fale comigo</a>
-    </nav>
+    </header>
+
 
     <div id="Inicio">
         <div class="txt-inicio">
@@ -42,7 +60,7 @@
     </div>
 
     <div id="projetos">
-        <h1>Meus projetos.</h1>
+        <h1>Meus projetos</h1>
 
         <div class="card">
             <div class="card-details">
@@ -82,7 +100,7 @@
     </div>
 
     <div id="fale-comigo">
-        <h1>Fale Comigo</h1>
+        <h1>Contato</h1>
         <form class="form">
             <div class="title">Entre em contato</div>
             <input type="text" placeholder="Seu email" class="input">
@@ -97,6 +115,8 @@
             <p>Copyright &copy;2024; Designed by <span class="designer">Nikolas Olivveira</span></p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
